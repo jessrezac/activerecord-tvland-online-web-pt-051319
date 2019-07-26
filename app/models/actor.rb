@@ -1,4 +1,5 @@
 class Actor < ActiveRecord::Base
+  belongs_to :shows
   has_many :characters
   has_many :shows, through: :characters
 
